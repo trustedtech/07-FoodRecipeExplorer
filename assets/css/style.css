@@ -1,0 +1,71 @@
+header {
+    padding: 5vh;
+    background-color: whitesmoke;
+    color: darkslategrey;
+}
+
+footer {
+    padding: 10px;
+    background-color: darkgray;
+    color: white
+}
+
+table {
+    border-collapse: collapse;
+}
+
+thead {
+    display: none;
+}
+
+tr {
+    border: 1px solid lightgray;
+}
+
+td, th {
+    padding: 3px;
+    min-width: 120px;
+}
+
+.scrolling {
+    overflow-y: auto;
+    white-space: nowrap;
+    max-height: 25vh;
+}
+
+#itemName {
+    font-size: 1.2em;
+    color:  #6fb33c;
+}
+
+#measureref {
+    display: none;
+    font-size: .9em;
+    font-weight: bold;
+    font-style: italic;
+    color: darkslategray;
+    line-height: 2em;;
+}
+
+.nutrient-head {
+    font-size: .8em;
+    font-style: italic;
+    color: gray;
+}
+
+.nutrient-key, .nutrient-value  {
+    font-size: .9em;
+}
+
+.nutrient-key {
+    font-weight: normal;
+}
+
+.nutrient-value {
+    font-weight: bold;
+    color: darkgreen;
+}
+
+#foodResults {
+    max-height: 35vh;
+}

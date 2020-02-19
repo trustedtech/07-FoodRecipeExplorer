@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Food & Recipe Explorer</title>
+
+  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/semantic-ui/semantic.min.css">
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"/>
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+  <script src="./assets/css/semantic-ui/semantic.min.js"></script>
+
+</head>
+
+<body>
+  <header class="ui container">
+
+    <!--Title Area-->
+    <h1 class="ui header centered">Food & Recipe Explorer</h1>
+
+    <!--Input Area-->
+    <div id="divInputs" class="ui two column grid stackable centered">
+
+      <!--Search Column 1-->
+      <div class="column five wide center aligned">
+        <h4 class="ui header">Search Keyword</h4>
+        <div id="inputDiv" class="ui icon input">
+          <form id="searchForm">
+            <input id="inputField" type="text" placeholder="Search...">
+            <i id="inputSubmit" class="search link icon"></i>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="ui container">
+    <div class="ui two column grid celled stackable centered">
+      <div class="ui row">
+
+        <!--USDA Search Results-->
+        <section class="eight wide column">
+          <h4 class="ui header sticky">USDA Search Results</h4>
+          <div id="foodResults" class="scrolling">
+            <ul id="usdaResultsList">
+            </ul>
+          </div>
+        </section>
+
+        <!--USDA Item Profile-->
+        <section class="eight wide column">
+          <h4 class="ui header sticky">USDA Item Profile</h4>
+          <div id="foodProfile">
+            <h4 id="itemName"></h4>
+            <p id="measureref">Values are based on a 100g portion.</p>
+            <div id="nutrientInfo" class="scrolling">
+              <table>
+                <thead id="tablehead">
+                  <tr>
+                    <th class="nutrient-head">Nutrient</th>
+                    <th class="nutrient-head">Measurement</th>
+                  </tr>
+                </thead>
+                <tbody id="nutrientList">
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+        </section>
+
+      </div>
+
+      <div class="row">
+
+        <!--Recipe Suggestions-->
+        <section id="foodRecipes" class="sixteen wide column">
+          <h4 class="ui header">Recipe Suggestions</h4>
+          <div class="scrolling">
+            <ul id="recipeList">
+            </ul>
+          </div>
+
+        </section>
+
+      <div>
+    </div>
+  </main>
+
+  <footer id="divFooter" class="ui container sticky">
+    <h5>Footer</h5>
+
+    <!--Attributions-->
+
+  </footer>
+
+ <script src ="./assets/js/script-bk.js"></script>
+  
+</body>
+
+</html>
