@@ -10,4 +10,5 @@ SO THAT I can confirm or change my diet choices in support of a healthy, intenti
 
 The idea is to have an app that allows a person to input the foods they have eaten each day along with other personal criteria and submit.  Then, the app will use this input to query APIs and collect nutritional information about the foods eaten.  The app will compare the nutrition intake to established general daily intake values and then recommend food/recipe choices based on nutrients that are lacking. 
 
+Deployed App
 https://trustedtech.github.io/07-FoodRecipeExplorer
